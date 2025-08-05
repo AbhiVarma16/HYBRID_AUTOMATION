@@ -3,7 +3,7 @@ import {
   navigateToPageAndLogin,
   validateContactInUI,
 } from "../../utils/pageUtils";
-import { loginUser, addContact } from "../pages/creatBookingApi";
+import { loginUser, addContact } from "../pages/createBookingApi";
 import { test, expect } from "@playwright/test";
 
 test("add contact via API and see in UI", async ({ page }) => {

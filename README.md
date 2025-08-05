@@ -126,6 +126,7 @@ You can store static data files or use dynamic generators as needed.
 
 ---
 
-👨‍💻 Author
-Abhishek Varma
-Software Engineer in Test (SDET)
+## 👨‍💻 Author
+
+**Abhishek Varma**  
+_Software Engineer in Test (SDET)_
