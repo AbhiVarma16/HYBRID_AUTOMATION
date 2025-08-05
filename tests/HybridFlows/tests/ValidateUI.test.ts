@@ -38,8 +38,7 @@ test("add contact via API and see in UI", async ({ page }) => {
   await test.step("Login to UI", async () => {
     await navigateToPageAndLogin(page, email, password);
   });
-  
-  // wantedly failing this step
+
   await test.step("Verify contact in UI table", async () => {
     await validateContactInUI(page, contact);
   });

@@ -34,7 +34,6 @@ export async function navigateToPageAndLogin(
   await page.fill(selectors.emailInput, email);
   await page.fill(selectors.passwordInput, password);
   await page.click(selectors.submitButton);
-  // await page.waitForSelector(selectors.contactListTable);
 }
 
 /**
@@ -43,13 +42,10 @@ export async function navigateToPageAndLogin(
  * @param contact - Contact details to validate
  */
 export async function validateContactInUI(page: Page, contact: Contact) {
-  const newlyAddedNameCell = page
-    .locator(selectors.contactListTable)
-    .locator(selectors.contactTableBody)
-    .last()
-    .locator("td")
-    .nth(1);
-  await expect(newlyAddedNameCell).toHaveText(
-    `${contact.firstName} ${contact.lastName}`
-  );
+  const fullName = `${contact.firstName} ${contact.lastName}`;
+  const contactRow = page.locator('tr.contactTableBodyRow', {
+    hasText: fullName,
+  });
+await expect(contactRow).toContainText(fullName);
+
 }
