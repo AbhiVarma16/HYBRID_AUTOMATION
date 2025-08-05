@@ -9,7 +9,7 @@
   "scripts": {
     "test": "jest",
     "test:api": "jest tests/API_Automation",
-    "test:hybrid": "jest tests/HybridFlows",
+    "test:hybrid": "npx playwright test tests/HybridFlows",
     "test:ui": "npx playwright test tests/UI_Automation/tests"
   },
   "keywords": [

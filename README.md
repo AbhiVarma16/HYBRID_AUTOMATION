@@ -93,6 +93,7 @@ npm test -- --coverage
 ```
 
 Then open:
+
 ```
 coverage/lcov-report/index.html
 ```
@@ -108,6 +109,7 @@ Refer to [`package.json`](./package.json) for full list of scripts.
 ## 🧾 Test Data
 
 Structured test data lives in:
+
 ```
 tests/HybridFlows/testData/
 ```
@@ -124,33 +126,6 @@ You can store static data files or use dynamic generators as needed.
 
 ---
 
-## 🤝 Contributing
-
-1. **Fork** the repo
-2. Create a **feature branch**  
-   ```bash
-   git checkout -b feature/yourFeature
-   ```
-3. **Commit** your changes  
-   ```bash
-   git commit -am "feat: add your feature"
-   ```
-4. **Push** to your branch  
-   ```bash
-   git push origin feature/yourFeature
-   ```
-5. Open a **Pull Request**
-
----
-
-## 📄 License
-
-This project is licensed under the **ISC License**.
-
----
-
-## 👤 Author
-
-**Abhishek Varma**
-
-> Built with ❤️ and focus to combine UI + API testing in one powerful framework.
+👨‍💻 Author
+Abhishek Varma
+Software Engineer in Test (SDET)
