@@ -1,0 +1,1 @@
+export const BaseURL = 'https://thinking-tester-contact-list.herokuapp.com';
