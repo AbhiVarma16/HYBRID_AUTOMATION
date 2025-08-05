@@ -27,6 +27,3 @@ playwright-report/
 .DS_Store
 Thumbs.db
 
-# Optional: Ignore data files if they are generated
-tests/testData/*.json
-tests/testData/*.ts

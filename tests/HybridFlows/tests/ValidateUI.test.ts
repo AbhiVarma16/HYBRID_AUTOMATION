@@ -4,7 +4,7 @@ import {
   validateContactInUI,
 } from "../../utils/pageUtils";
 import { loginUser, addContact } from "../pages/creatBookingApi";
-import { test } from "@playwright/test";
+import { test, expect } from "@playwright/test";
 
 test("add contact via API and see in UI", async ({ page }) => {
   let token: string;
@@ -38,7 +38,8 @@ test("add contact via API and see in UI", async ({ page }) => {
   await test.step("Login to UI", async () => {
     await navigateToPageAndLogin(page, email, password);
   });
-
+  
+  // wantedly failing this step
   await test.step("Verify contact in UI table", async () => {
     await validateContactInUI(page, contact);
   });

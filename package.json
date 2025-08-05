@@ -8,10 +8,9 @@
   },
   "scripts": {
     "test": "jest",
-    "test:coverage": "jest --coverage",
-    "test:ui": "npx playwright test",
-    "test:ui:report": "npx playwright show-report",
-    "test:watch": "jest --watch"
+    "test:api": "jest tests/API_Automation",
+    "test:hybrid": "jest tests/HybridFlows",
+    "test:ui": "npx playwright test tests/UI_Automation/tests"
   },
   "keywords": [
     "automation",
@@ -24,8 +23,6 @@
     "ui-testing",
     "api-testing"
   ],
-  "author": "Abhishek Varma",
-  "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.54.2",
     "@types/axios": "^0.14.4",

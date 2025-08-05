@@ -1,0 +1,26 @@
+[
+  {
+    "firstName": "Alice",
+    "lastName": "Smith",
+    "birthdate": "1993-05-10",
+    "email": "abc@example.com",
+    "phone": "9876543210",
+    "street1": "456 Elm St",
+    "city": "Metropolis",
+    "stateProvince": "NY",
+    "postalCode": "10001",
+    "country": "USA"
+  },
+  {
+    "firstName": "Bob",
+    "lastName": "Brown",
+    "birthdate": "1992-11-21",
+    "email": "dgf@example.com",
+    "phone": "1231231234",
+    "street1": "789 Pine Ave",
+    "city": "Gotham",
+    "stateProvince": "CA",
+    "postalCode": "90210",
+    "country": "USA"
+  }
+]
