@@ -26,7 +26,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run API and Hybrid Jest tests
-        run: npm run test
+        run: npm run test:hybrid
 
       - name: Run Playwright UI tests
         run: npm run test:ui
