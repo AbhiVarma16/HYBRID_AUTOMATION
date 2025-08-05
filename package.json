@@ -1,17 +1,31 @@
 {
   "name": "hybrid_automation",
   "version": "1.0.0",
+  "description": "A hybrid automation framework for UI and API testing using Playwright, Axios, and Jest.",
   "main": "index.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:ui": "npx playwright test",
+    "test:ui:report": "npx playwright show-report",
+    "test:watch": "jest --watch"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "automation",
+    "testing",
+    "playwright",
+    "jest",
+    "axios",
+    "typescript",
+    "hybrid",
+    "ui-testing",
+    "api-testing"
+  ],
+  "author": "Abhishek Varma",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "@playwright/test": "^1.54.2",
     "@types/axios": "^0.14.4",
