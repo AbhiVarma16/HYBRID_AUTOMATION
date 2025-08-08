@@ -28,6 +28,9 @@ jobs:
       - name: Run API and Hybrid Jest tests
         run: npm run test:hybrid
 
+      - name: Run API tests
+        run: npx jest tests:api
+
       - name: Run Playwright UI tests
         run: npm run test:ui
       - name: Upload Playwright Report

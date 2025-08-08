@@ -10,7 +10,7 @@ test("Validate Add Contact", async ({ page }) => {
   const password = "testing";
   const contact: Contact = {
     firstName: "John",
-    lastName: "Doe",
+    lastName: "Doe" + Date.now().toString().slice(-4),
     birthdate: "1990-01-01",
     email: "",
     phone: "1234567890",
