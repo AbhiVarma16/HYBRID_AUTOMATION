@@ -29,7 +29,7 @@ jobs:
         run: npm run test:hybrid
 
       - name: Run API tests
-        run: npx jest tests:api
+        run: npm run test:api
 
       - name: Run Playwright UI tests
         run: npm run test:ui
