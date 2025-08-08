@@ -7,8 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "npm run test:api",
-    "test:api": "jest tests/API_Automation",
+    "test:api": "npx jest tests/API_Automation",
     "test:hybrid": "npx playwright test tests/HybridFlows",
     "test:ui": "npx playwright test tests/UI_Automation/tests"
   },
